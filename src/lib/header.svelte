@@ -6,7 +6,7 @@
 
 </script>
 
-<header class=" mx-24 py-2 flex justify-between items-center border-b-[1px] border-dotted  border-gray-400 border-opacity-100">
+<header class="py-2 flex justify-between items-center border-b-[1px] border-dotted  border-gray-400 border-opacity-100">
   
   <div class="flex items-center">
     <img src=" /logoIcon.svg" alt="Logo" width="27" height="28">
@@ -42,7 +42,7 @@
     <DropdownMenu.Root>
       <DropdownMenu.Trigger>
         <div class="flex">
-          <img class="rounded-full border-[0.5px] border-[#4D4D4D]" src="/userImage.png" alt="userImage" width="40" height="40">
+          <img class="rounded-full border-[0.5px] border-[#4D4D4D]" src="/userImage.svg" alt="userImage" width="40" height="40">
           <span class="truncate max-w-40 text-[#4D4D4D] text-lg mx-2 mt-[6px]">{userName}</span>
            <img class="mt-1" src="/chevron-down.svg" alt="Logo" width="16" height="16">
         </div>

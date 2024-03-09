@@ -1,6 +1,5 @@
 <script lang="ts">
   import { Button } from "./components/ui/button";
-
   export let userName: string;
 </script>
 
@@ -29,7 +28,6 @@
                     <span class="text-[12px] text-[#7A9299] font-normal">Co-Founder and CEO</span>
                 </div>
             </div>
-            
         </div>
         <div class="flex justify-between mt-5">
             <Button variant="shadowButton" class="h-8 ml-3"> Follow</Button>

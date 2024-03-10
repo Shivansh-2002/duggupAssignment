@@ -1,7 +1,11 @@
 <script lang="ts">
-  import type { UserData } from "../routes/+page.svelte";
-  import { Button } from "./components/ui/button";
-  export let userData: UserData;
+    import type { UserData } from "../routes/+page.svelte";
+    import { Button } from "./components/ui/button";
+    export let userData: UserData;
+    let isFollowed = false;
+    function toggleFollow() {
+        isFollowed = !isFollowed;
+    }
 </script>
 
 <div class="xl:mx-40 lg:mx-20 md:mx-14 sm:mx-10 mx-5 py-2 mt-20 flex xl:flex-row flex-col justify-between">
@@ -31,7 +35,11 @@
             </div>
         </div>
         <div class="flex justify-between mt-5">
-            <Button variant="shadowButton" class="h-8 ml-3">Follow</Button>
+            {#if !isFollowed}
+                <Button variant="shadowButton" class="h-8 ml-3" on:click={toggleFollow}>Follow</Button>
+            {:else}
+                <Button variant="shadowButton" class="h-8 ml-3" on:click={toggleFollow}>Followed</Button>
+            {/if}
             <div class="flex">
                 <a href={userData.websiteLink} class="flex" target="_blank">
                     <span class="text-[#4D4D4D] text-sm font-normal">My Website</span> 

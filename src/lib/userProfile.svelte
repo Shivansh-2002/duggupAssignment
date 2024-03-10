@@ -4,8 +4,8 @@
   export let userData: UserData;
 </script>
 
-<div class="mx-40 py-2 mt-20 flex justify-between">
-    <div>
+<div class="xl:mx-40 lg:mx-20 md:mx-14 sm:mx-10 mx-5 py-2 mt-20 flex xl:flex-row flex-col justify-between">
+    <div class="flex flex-col items-center">
         <div class="w-32">
             <img class="rounded-full border-[5px]border-[#EAEFF5]" src="/userImage.svg" alt="userImage" width="120" height="120">
         </div>
@@ -15,8 +15,8 @@
     </div>
 
     <div class="flex flex-col mx-10 my-2">
-        <div class="flex justify-between">
-            <div class="my-2 2xl:max-w-[620px]">
+        <div class="flex lg:flex-row flex-col items-center">
+            <div class="my-2 2xl:max-w-fit ">
                 {userData.about}
             </div>
             

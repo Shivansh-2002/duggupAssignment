@@ -21,7 +21,7 @@
         <img class="lg:rotate-0 rotate-90 max-lg:w-[12px] max-lg:ml-32" src="/experienceUserProfile.svg" alt="dottedLinedUserProfile" width="32" height="288">
     </div>
     
-    <Card.Root class="lg:ml-6 px-6 mt-10 my-2 max-h-28 max-w-[600px]">
+    <Card.Root class="lg:ml-6 px-6 mt-10 my-2 max-h-28 lg:h-20 lg:mt-10 lg:w-[600px] max-w-[600px]">
         <Card.Content class="flex flex-col">
             <span class="mt-2 text-[20px] text-[#141618] font-bold">
                 {userExp.position}

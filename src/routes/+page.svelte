@@ -4,7 +4,7 @@
   import UserArticleComponent from "$lib/userArticleComponent.svelte";
   import UserExperienceComponent from "$lib/userExperienceComponent.svelte";
 
-  //assuming this data is coming from the backend and the fields are mandatory 
+  //assuming this data is coming from the backend and the fields are mandatory, Taken liberaty to do that
   export interface UserData {
     userName: string;
     about: string;
@@ -109,6 +109,4 @@
       {/if}
     {/each}
   </div>
-  
-  
 </div>

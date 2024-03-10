@@ -4,7 +4,7 @@
     export let userArticles: ArticleArray;
 </script>
 
-<div class="xl:mx-20 lg:mx-14 md:mx-10 sm:mx-8 mx-0 mt-5">
+<div class="xl:mx-20 lg:mx-14 md:mx-10 sm:mx-8 mx-0 max-lg:mt-5">
   <div class="flex justify-between">
     <div class="flex lg:flex-row flex-col items-center h-fit">
         <div class="w-40 lg:justify-end flex lg:flex-row flex-col items-center">

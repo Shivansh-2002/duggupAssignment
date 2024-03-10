@@ -98,15 +98,17 @@
 
 <Header userData={userData} />
 
-<div class="px-24 my-2 bg-[#FCFCFF] overflow-y-auto items-center justify-center">
+<div class="xl:px-24 lg:px-16 md:px-12 sm:px-8 px-5 my-2 bg-[#FCFCFF] h-full overflow-y-auto items-center justify-center">
   <UserProfile userData={userData} />
-   {#each userData.pastExperience as object}
-    {#if 'date' in object}
-      <UserArticleComponent userArticles={object} />
-    {:else}
-      <UserExperienceComponent userExp={object} />
-    {/if}
-  {/each}
-
+  <div class="flex flex-col max-lg:items-center">
+    {#each userData.pastExperience as object}
+      {#if 'date' in object}
+        <UserArticleComponent userArticles={object} />
+      {:else}
+        <UserExperienceComponent userExp={object} />
+      {/if}
+    {/each}
+  </div>
+  
   
 </div>

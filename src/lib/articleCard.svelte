@@ -4,7 +4,7 @@
     export let articles: UserArticle;
 </script>
 
-<Card.Root class="ml-6 min-h-48 min-w-[334px]">
+<Card.Root class="xl:ml-6 my-2 min-h-48 min-w-[334px]">
     <Card.Header>
         <img class="h-[136px] w-full rounded-sm" 
         src={articles.articleImage} 
